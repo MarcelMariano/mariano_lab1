@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.echaluce'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Use only one version of SQLite JDBC
+    implementation 'org.xerial:sqlite-jdbc:3.49.0.0'
+
+    // MySQL Connector
+    implementation 'mysql:mysql-connector-java:8.0.33'
+
+
+}
+
+test {
+    useJUnitPlatform()
+}
